@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FactoryDesignPattern;
+using System;
+using System.Net.Http.Headers;
 
 namespace PracticeCode
 {
@@ -6,7 +8,10 @@ namespace PracticeCode
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            EmployeeFactory empFacttory= new EmployeeFactory();
+            var emp=empFacttory.GetEmployeeFactory("Contract");
+            Console.WriteLine(emp.GetIncome(100));
+            Console.ReadKey();
         }
     }
 }
