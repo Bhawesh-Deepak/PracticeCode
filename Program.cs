@@ -2,13 +2,11 @@
 
 namespace PracticeCode
 {
-    public static class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World Application for Development and Practice Purpose !");
-            Console.ReadKey();
+            Console.WriteLine("Hello World!");
         }
-
     }
 }
