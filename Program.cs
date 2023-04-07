@@ -8,6 +8,7 @@ namespace PracticeCode
     {
         static void Main(string[] args)
         {
+            //code comment
             EmployeeFactory empFacttory= new EmployeeFactory();
             var emp=empFacttory.GetEmployeeFactory("Contract");
             Console.WriteLine(emp.GetIncome(100));
